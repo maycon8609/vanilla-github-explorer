@@ -1,0 +1,145 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+   background-color: #22272e;
+}
+
+#root {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+   height: 100%;
+}
+
+.container {
+   width: 500px;
+   height: max-content;
+   border: 1px solid #444c56;
+   border-radius: 5px;
+   padding: 12px;
+}
+
+.container header {
+   display: flex;
+}
+
+.container header .avatar {
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+
+   outline: 2px solid #a4c639;
+   outline-offset: 1px;
+   margin-right: 16px;
+}
+
+.container header .userContentContainer {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.container header .userContentContainer .userInfo {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.container header .userContentContainer .userInfo .name {
+   color: #adbac7;
+   font-size: 24px;
+   font-weight: 700;
+   padding: 3px 0px;
+}
+
+.container header .userContentContainer .userInfo .userName {
+   color: #768390;
+   font-size: 20px;
+   font-weight: 300;
+   padding: 3px 0px;
+}
+
+.container header .userContentContainer .userInfo .location {
+   color: #adbac7;
+   font-size: 14px;
+   padding: 3px 0px;
+}
+
+.container header .userContentContainer .userContact {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.container header .userContentContainer .userContact .blog {
+   color: #adbac7;
+   font-size: 14px;
+   font-weight: 700;
+   text-decoration: none;
+   padding: 3px 0px;
+   transition: opacity 0.8s;
+}
+
+.container header .userContentContainer .userContact .blog:hover {
+   opacity: 0.5;
+}
+
+.container header .userContentContainer .userContact .email {
+   color: #768390;
+   font-size: 14px;
+   font-weight: 300;
+   text-decoration: none;
+   padding: 3px 0px;
+   transition: opacity 0.8s;
+}
+
+.container header .userContentContainer .userContact .email:hover {
+   opacity: 0.5;
+}
+
+.container header .userContentContainer .userContact .company {
+   color: #adbac7;
+   font-size: 14px;
+   padding: 3px 0px;
+}
+
+.container .divider {
+   border: 1px solid #373e47;
+   margin: 10px 0px;
+}
+
+.container section {
+   margin-bottom: 16px;
+}
+
+.container section .sectionContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.container section .sectionContainer .sectionSpanContainer .spanValue {
+   color: #adbac7;
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.container section .sectionContainer .sectionSpanContainer .spanLabel {
+   color: #768390;
+   font-weight: 400;
+   font-size: 16px;
+}
+
+.container footer .footerSpan {
+   font-size: 16px;
+   color: #adbac7;
+}
