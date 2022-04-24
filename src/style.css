@@ -22,6 +22,47 @@ body {
 }
 
 .container {
+   display: flex;
+   flex-direction: column;
+}
+
+.container .searchContainer {
+   width: 500px;
+   height: max-content;
+   margin-bottom: 10px;
+
+   display: flex;
+}
+
+.container .searchContainer input {
+   width: 100%;
+   border: 1px solid #444c56;
+   border-radius: 5px;
+   padding: 5px;
+   margin-right: 6px;
+}
+
+.container .searchContainer input:focus {
+   outline: none;
+}
+
+.container .searchContainer button {
+   border: none;
+   border-radius: 5px;
+   padding: 5px;
+   width: 80px;
+   background-color: #373e47;
+   font-weight: 600;
+   color: #adbac7;
+   transition: opacity 0.2s;
+   cursor: pointer;
+}
+
+.container .searchContainer button:hover {
+   opacity: 0.5;
+}
+
+.container .cardContainer .userContentContainer {
    width: 500px;
    height: max-content;
    border: 1px solid #444c56;
@@ -29,11 +70,11 @@ body {
    padding: 12px;
 }
 
-.container header {
+.container .cardContainer .userContentContainer header {
    display: flex;
 }
 
-.container header .avatar {
+.container .cardContainer .userContentContainer header .avatar {
    width: 80px;
    height: 80px;
    border-radius: 50%;
@@ -43,103 +84,173 @@ body {
    margin-right: 16px;
 }
 
-.container header .userContentContainer {
+.container .cardContainer .userContentContainer header .userHeaderContainer {
    display: flex;
    width: 100%;
    justify-content: space-between;
 }
 
-.container header .userContentContainer .userInfo {
+.container
+   .cardContainer
+   .userContentContainer
+   header
+   .userHeaderContainer
+   .userInfo {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
 }
 
-.container header .userContentContainer .userInfo .name {
+.container
+   .cardContainer
+   .userContentContainer
+   header
+   .userHeaderContainer
+   .userInfo
+   .name {
    color: #adbac7;
    font-size: 24px;
    font-weight: 700;
    padding: 3px 0px;
 }
 
-.container header .userContentContainer .userInfo .userName {
+.container
+   .cardContainer
+   .userContentContainer
+   header
+   .userHeaderContainer
+   .userInfo
+   .userName {
    color: #768390;
    font-size: 20px;
    font-weight: 300;
    padding: 3px 0px;
 }
 
-.container header .userContentContainer .userInfo .location {
+.container
+   .cardContainer
+   .userContentContainer
+   header
+   .userHeaderContainer
+   .userInfo
+   .location {
    color: #adbac7;
    font-size: 14px;
    padding: 3px 0px;
 }
 
-.container header .userContentContainer .userContact {
+.container
+   .cardContainer
+   .userContentContainer
+   header
+   .userHeaderContainer
+   .userContact {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
 }
 
-.container header .userContentContainer .userContact .blog {
+.container
+   .cardContainer
+   .userContentContainer
+   header
+   .userHeaderContainer
+   .userContact
+   .blog {
    color: #adbac7;
    font-size: 14px;
    font-weight: 700;
    text-decoration: none;
    padding: 3px 0px;
-   transition: opacity 0.8s;
+   transition: opacity 0.2s;
 }
 
-.container header .userContentContainer .userContact .blog:hover {
+.container
+   .cardContainer
+   .userContentContainer
+   header
+   .userHeaderContainer
+   .userContact
+   .blog:hover {
    opacity: 0.5;
 }
 
-.container header .userContentContainer .userContact .email {
+.container
+   .cardContainer
+   .userContentContainer
+   header
+   .userHeaderContainer
+   .userContact
+   .email {
    color: #768390;
    font-size: 14px;
    font-weight: 300;
    text-decoration: none;
    padding: 3px 0px;
-   transition: opacity 0.8s;
+   transition: opacity 0.2s;
 }
 
-.container header .userContentContainer .userContact .email:hover {
+.container
+   .cardContainer
+   .userContentContainer
+   header
+   .userHeaderContainer
+   .userContact
+   .email:hover {
    opacity: 0.5;
 }
 
-.container header .userContentContainer .userContact .company {
+.container
+   .cardContainer
+   .userContentContainer
+   header
+   .userHeaderContainer
+   .userContact
+   .company {
    color: #adbac7;
    font-size: 14px;
    padding: 3px 0px;
 }
 
-.container .divider {
+.container .cardContainer .userContentContainer .divider {
    border: 1px solid #373e47;
    margin: 10px 0px;
 }
 
-.container section {
+.container .cardContainer .userContentContainer section {
    margin-bottom: 16px;
 }
 
-.container section .sectionContainer {
+.container .cardContainer .userContentContainer section .sectionContainer {
    display: flex;
    justify-content: space-between;
 }
 
-.container section .sectionContainer .sectionSpanContainer .spanValue {
+.container
+   .cardContainer
+   .userContentContainer
+   section
+   .sectionContainer
+   .sectionSpanContainer
+   .spanValue {
    color: #adbac7;
    font-weight: 600;
    font-size: 16px;
 }
 
-.container section .sectionContainer .sectionSpanContainer .spanLabel {
+.container
+   .cardContainer
+   .userContentContainer
+   section
+   .sectionContainer
+   .sectionSpanContainer
+   .spanLabel {
    color: #768390;
    font-weight: 400;
    font-size: 16px;
 }
 
-.container footer .footerSpan {
+.container .cardContainer .userContentContainer footer .footerSpan {
    font-size: 16px;
    color: #adbac7;
 }
