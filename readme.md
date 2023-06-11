@@ -1,4 +1,4 @@
-# GitHub User Data App
+# GitHub Explore
 
 ![default screen](./assets/default-screen.png)
 ![search result](./assets/search-result.png)
@@ -35,5 +35,3 @@ Siga as etapas abaixo para configurar e executar a aplicação:
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
-
-
