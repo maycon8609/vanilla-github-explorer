@@ -150,6 +150,7 @@ function generateFooter(following) {
 
 function generateSearchField() {
    const input = document.createElement("input");
+   input.setAttribute("placeholder", "Digite aqui");
    input.setAttribute("type", "text");
    input.setAttribute("data-testid", "search-field");
 
@@ -160,7 +161,7 @@ function generateSearchButton() {
    const searchButton = document.createElement("button");
    searchButton.setAttribute("type", "button");
    searchButton.setAttribute("data-testid", "search-button");
-   searchButton.textContent = "Search";
+   searchButton.textContent = "Pesquisar";
 
    return searchButton;
 }
